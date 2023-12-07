@@ -1,8 +1,8 @@
 import cv2
 import serial, time
-
+#change the ..path !!!!!! 
 face_cascade = cv2.CascadeClassifier(
-    "C:\\Users\\19180\\PycharmProjects\\anglefinder\\venv\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
+    "C:\\..path\\venv\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
 cap=cv2.VideoCapture(1)
 #COM4 is Ardunio Port. Check it and change according to your port. it may be COM3, COM4, COM5
 ArduinoSerial=serial.Serial('COM6',9600,timeout=0.1)
